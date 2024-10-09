@@ -4,12 +4,19 @@
         <meta charset="UTF-8" />
         <title>lol</title>
         <link href="style.css" rel = "stylesheet">
-        <script defer src="lol.js"></script>
+        <script defer src="js/splash_art.js"></script>
+        <script defer src="js/champion_select.js"></script>
     </head>
     
     <body>
         lolのページ<br>
-        <select name="champions" id="champions"> 
+        
+        <select name="champion_select" id="champion_select"> 
         </select>
+
+        <button onclick="change_img()">画像を表示</button>
+        <br>
+        
+        <img id="splash_art">
     </body>
 </html>
