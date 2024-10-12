@@ -18,6 +18,7 @@ function add_select_champion(champion_names){
         option.value = champion["name_en"];
         select.appendChild(option);
     }
+    change_img();
 }
 
 // urlからjsonを取得

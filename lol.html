@@ -3,18 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <title>lol</title>
-        <link href="style.css" rel = "stylesheet">
-        <script defer src="js/splash_art.js"></script>
-        <script defer src="js/champion_select.js"></script>
+        <link href="css/lol.css" rel = "stylesheet">
+        <script async src="js/champion_select.js"></script>
+        <script async src="js/splash_art.js"></script>
     </head>
     
     <body>
-        lolのページ<br>
+        <p>スプラッシュアート</p>
         
-        <select name="champion_select" id="champion_select"> 
+        <select name="champion_select" id="champion_select" onchange="change_img()"> 
         </select>
-
-        <button onclick="change_img()">画像を表示</button>
         <br>
         
         <img id="splash_art">
