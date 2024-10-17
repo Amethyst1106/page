@@ -8,9 +8,13 @@ if(get_cookie('mine1') === undefined){
 }
 
 var ameji = parseInt(get_cookie('ameji'));
+ameji = isNaN(ameji) ? 0 : ameji;
 var mine1 = parseInt(get_cookie('mine1'));
-
+mine1 = isNaN(mine1) ? 0 : mine1;
 var mine1_cost = 30*2**mine1;
+
+update_counter();
+update_mine1_cost();
 
 setInterval(update_counter, 50);
 setInterval(update_ameji, 1000);
@@ -41,7 +45,7 @@ function add_mine(){
     if (ameji >= mine1_cost){
         ameji -= mine1_cost;
         mine1 += 1;
-        mine1_cost *= 2;
+        mine1_cost = 30*2**mine1;
         update_mine1_cost();
     }
     else{
