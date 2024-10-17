@@ -1,15 +1,14 @@
-﻿var ameji = get_cookie('ameji');
-var mine1 = get_cookie('mine1');
-
-
-if(ameji === undefined){
+﻿if(get_cookie('ameji') === undefined){
     ameji = 0;
     set_cookie('ameji', 0);
 }
-if(mine1 === undefined){
+if(get_cookie('mine1') === undefined){
     mine1 = 0;
     set_cookie('mine1', 0);
 }
+
+var ameji = parseInt(get_cookie('ameji'));
+var mine1 = parseInt(get_cookie('mine1'));
 
 var mine1_cost = 30*2**mine1;
 
