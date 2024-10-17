@@ -1,6 +1,17 @@
-﻿var ameji = 0;
-var mine = 0;
-var mine1_cost = 30;
+﻿var ameji = get_cookie('ameji');
+var mine1 = get_cookie('mine1');
+
+
+if(ameji === undefined){
+    ameji = 0;
+    set_cookie('ameji', 0);
+}
+if(mine1 === undefined){
+    mine1 = 0;
+    set_cookie('mine1', 0);
+}
+
+var mine1_cost = 30*2**mine1;
 
 setInterval(update_counter, 50);
 setInterval(update_ameji, 1000);
@@ -9,7 +20,7 @@ function update_counter(){
     let ameji_counter = document.getElementById("ameji_counter");
     ameji_counter.innerHTML = `${ameji} <font size="2">アメジ</font>`;
     let mine1_counter = document.getElementById("mine_counter");
-    mine1_counter.innerHTML = `${mine} <font size="2">鉱山</font>`;
+    mine1_counter.innerHTML = `${mine1} <font size="2">鉱山</font>`;
 }
 
 function update_mine1_cost(){
@@ -18,7 +29,9 @@ function update_mine1_cost(){
 }
 
 function update_ameji(){
-    ameji += mine;
+    ameji += mine1;
+    set_cookie('ameji', ameji);
+    set_cookie('mine1', mine1);
 }
 
 function add_ameji(n = 1){
@@ -28,7 +41,7 @@ function add_ameji(n = 1){
 function add_mine(){
     if (ameji >= mine1_cost){
         ameji -= mine1_cost;
-        mine += 1;
+        mine1 += 1;
         mine1_cost *= 2;
         update_mine1_cost();
     }
