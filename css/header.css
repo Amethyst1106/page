@@ -1,7 +1,14 @@
 ﻿header {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    background: #c8ffdf;
-    position: absolute;
-    top: 0;
+    height: 100px;
+    background: rgb(225, 225, 255);
+}
+
+header p{
+    font-size: 40px;
+    font-weight: bold;
+    top: 50%;
 }
