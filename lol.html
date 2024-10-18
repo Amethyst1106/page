@@ -13,14 +13,16 @@
     <body>
         <header id="header"></header>
 
-        <p>スプラッシュアート</p>
+        <div id="content">
+            <p>スプラッシュアート</p>
+            
+            <select name="champion_select" id="champion_select" onchange="change_img()"> 
+            </select>
+            <br>
+            
+            <img id="splash_art">
+        </div>
         
-        <select name="champion_select" id="champion_select" onchange="change_img()"> 
-        </select>
-        <br>
-        
-        <img id="splash_art">
-
         <footer id="footer"></footer>
     </body>
 </html>
