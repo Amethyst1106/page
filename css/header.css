@@ -1,1 +1,7 @@
-﻿
+﻿footer {
+    text-align: center;
+    width: 100%;
+    background: #c8ffdf;
+    position: absolute;
+    top: 0;
+}
