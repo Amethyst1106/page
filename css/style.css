@@ -3,6 +3,7 @@
 }
 
 #content{
+    min-height: 100vw;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
     position: relative;

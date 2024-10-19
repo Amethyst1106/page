@@ -1,15 +1,23 @@
 ﻿#counter {
     font-size: 30px;
+    padding-top: 20px;
 }
 
-button.mine{
-    margin-top: 20px;
+#buttons {
+    padding-bottom: 50px;
+}
+
+button {
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+#mines button {
     height: 50px;
     width: 150px;
 }
 
-#err {
-    display: inline-block;
+.err {
+    height: 20px;
     color: red;
-    margin-left: 20px;
 }
