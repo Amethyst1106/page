@@ -75,7 +75,7 @@ function add_mine1(){
 
 function add_mine2(){
     if (ameji >= mine2_cost){
-        add_ameji(mine2_cost);
+        add_ameji(-mine2_cost);
         mine2 += 1;
         mine2_cost = 1000*2**mine2;
         update_mine2_cost();
