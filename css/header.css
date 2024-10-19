@@ -7,7 +7,8 @@
     background: rgb(225, 225, 255);
 }
 
-header p{
+header a{
+    text-decoration: none;
     font-size: 40px;
     font-weight: bold;
     top: 50%;
