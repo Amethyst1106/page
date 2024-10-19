@@ -25,6 +25,7 @@ var mine2_cost = 1000*2**mine2;
 
 update_counter();
 update_mine1_cost();
+update_mine2_cost();
 
 setInterval(update_counter, 50);
 setInterval(update, 1000);
