@@ -27,7 +27,6 @@ update_counter();
 update_mine1_cost();
 update_mine2_cost();
 
-setInterval(update_counter, 50);
 setInterval(update, 1000);
 
 function update_counter(){
@@ -51,7 +50,7 @@ function update_mine2_cost(){
 
 function update(){
     mine1 += mine2;
-    ameji += mine1;
+    add_ameji(mine1);
     set_cookie('ameji', ameji);
     set_cookie('mine1', mine1);
     set_cookie('mine2', mine2);
@@ -59,6 +58,7 @@ function update(){
 
 function add_ameji(n = 1){
     ameji += n;
+    update_counter();
 }
 
 function add_mine1(){
