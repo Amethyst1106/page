@@ -3,13 +3,24 @@
     padding-top: 20px;
 }
 
-#buttons {
-    padding-bottom: 50px;
+#ameji {
+    margin: 30px;
+}
+
+#ameji button {
+    padding: 0;
+    border-color: mediumpurple;
+    box-shadow: 2px 3px 0 0 mediumpurple;
+    background: transparent;
+}
+
+#ameji button img {
+    width: 100px;
 }
 
 button {
     border-radius: 5px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 #mines button {
