@@ -2,7 +2,7 @@
 let mine1 = new Mine(type = "mine1", name = "アメジ鉱山", first_cost = 20, cost_func = function(n){return 10*(1+n);}, ameji);
 let mine2 = new Mine(type = "mine2", name = "アメジ鉱山発見機", first_cost = 1000, cost_func = function(n){return 1000*2**n;}, ameji);
 
-mines = [mine1, mine2]
+let mines = [mine1, mine2]
 
 
 update_counter_cost();
@@ -20,9 +20,10 @@ function frame(){
 
 function update_counter_cost(){
     ameji.update_counter();
-    for(mine of mines){
-        mine.update_counter();
+    for(let mine of mines){
+        mine.add_cost();
         mine.update_cost();
+        mine.update_counter();
     }
 }
 

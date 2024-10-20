@@ -28,8 +28,8 @@
     add(n = 1){
         this.number += n
         this.add_cost();
-        this.update_counter();
         this.update_cost();
+        this.update_counter();
         set_cookie(this.type, this.number);
     }
 
