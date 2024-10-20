@@ -1,9 +1,4 @@
-﻿head = document.getElementsByTagName("head")[0];
-head.innerHTML += '<link href="css/header_footer.css" rel="stylesheet">';
-
-document.addEventListener("DOMContentLoaded", function() {
-    header = document.getElementsByTagName("header")[0];
-    header.innerHTML = '<a href="index.html">Amethystのホームページ</a>';
-    footer = document.getElementsByTagName("footer")[0];
-    footer.innerHTML = '<a href="index.html">トップページ</a>';
-});
+﻿let header = document.getElementsByTagName("header")[0];
+header.innerHTML = '<a href="index.html">Amethystのホームページ</a>';
+let footer = document.getElementsByTagName("footer")[0];
+footer.innerHTML = '<a href="index.html">トップページ</a>';
