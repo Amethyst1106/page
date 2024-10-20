@@ -11,7 +11,9 @@
         <script defer src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
         <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script defer src="js/clicker/cookie.js"></script>
-        <script defer src="js/clicker/clicker.js"></script>
+        <script defer src="js/clicker/mine.js"></script>
+        <script defer src="js/clicker/ameji.js"></script>
+        <script defer src="js/clicker/new_clicker.js"></script>
         
         
     </head>
@@ -30,12 +32,12 @@
                 </div>
                 <div id="mines">
                     <div id="mine1">
-                        <button onclick="add_mine1()">アメジ鉱山+1<br>10アメジ</button>
-                        <p class="err" id="err1"></p>
+                        <button onclick="buy_mine(1)">アメジ鉱山+1<br>10アメジ</button>
+                        <p class="err" id="mine1_err"></p>
                     </div>
                     <div id="mine2">
-                        <button onclick="add_mine2()">アメジ鉱山発見機+1<br>1000アメジ</button>
-                        <p class="err" id="err2"></p>
+                        <button onclick="buy_mine(2)">アメジ鉱山発見機+1<br>1000アメジ</button>
+                        <p class="err" id="mine2_err"></p>
                     </div>
                 </div>
             </div>
